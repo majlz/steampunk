@@ -1,20 +1,18 @@
 using UnityEngine;
 using System.Collections;
 
-public class HoverPad : MonoBehaviour
+public class AddForce : MonoBehaviour
 {
-  void onTriggerEnter (Collider other)
+  void Start ()
   {
-    Debug.log ("Do when inside")
+    rb = GetComponent<Rigidbody>();
   }
-  
-  void onTriggerStay (Collider other)
+  void Update ()
   {
-    Debug.log ("Do when stay inside")
-  }
-
-void onTriggerExit (Collider other)
-  {
-    Debug.log ("Do when exit")
+    Debug.log ("Flying")
+    if (input.GetKeyDown ("f"))
+    {
+      rb.AddForce(Vector3.up * hoverForce, ForceMode.Acceleration);
+    }
   }
 }
