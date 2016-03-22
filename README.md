@@ -1,7 +1,9 @@
 # steampunk
-Puzzle-3D Adventure game u/
+Puzzle-3D Adventure game
+
 We need:
 * Character
 * Concept of Mechanic 
-* Physic coding u/
+* Physic coding
+* 
 Comon' guys, push it up!
