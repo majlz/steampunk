@@ -12,7 +12,7 @@ public class AddForce : MonoBehaviour
   void Update ()
   {
     Debug.log ("Flying")
-    if (input.GetKeyDown ("f"))
+    if (input.GetKeyDown(KeyCode.F))
     {
       rb.AddForce(Vector3.up * hoverForce, ForceMode.Acceleration);
     }
