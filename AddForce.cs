@@ -3,6 +3,8 @@ using System.Collections;
 
 public class AddForce : MonoBehaviour
 {
+  public float hoverForce = 12f;
+  
   void Start ()
   {
     rb = GetComponent<Rigidbody>();
